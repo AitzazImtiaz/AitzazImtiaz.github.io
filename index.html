@@ -12,7 +12,6 @@
   .header {
     background-color: lightblue;
     padding: 10px;
-    text-align: left; /* Align text from left to right */
   }
   .header a {
     color: black;
@@ -23,16 +22,23 @@
     text-decoration: underline;
   }
   .image-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 50px; /* Add space between header and image */
+    position: relative;
     width: 50%;
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .image-container img {
     width: 100%;
     height: auto;
+  }
+  .sample-text {
+    text-align: left; /* Align sample text from left to right */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 20px;
   }
 </style>
 </head>
@@ -45,6 +51,9 @@
   </div>
   <div class="image-container">
     <img src="aitzaz2024.jpg" alt="Aitzaz2024 Image">
+  </div>
+  <div class="sample-text">
+    <p>This is a sample text that aligns from left to right.</p>
   </div>
 </body>
 </html>
