@@ -3,10 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  @media only screen and (min-width: 600px) {
+    .image-container {
+      width: 400px;
+    }
+  }
+</style>
 </head>
-<body style="margin: 0; padding: 0; text-align: center;">
-  <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%;">
-    <img src="aitzaz2024.jpg" alt="Aitzaz2024 Image" style="width: 400px; height: auto;">
+<body>
+  <div class="image-container">
+    <img src="aitzaz2024.jpg" alt="Aitzaz2024 Image">
   </div>
 </body>
 </html>
