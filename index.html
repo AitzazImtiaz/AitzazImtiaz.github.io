@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-<style>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ jax: ["input/TeX", "output/HTML-CSS"], extensions: ["tex2jax.js"], "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }, tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" }, TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } }, messageStyle: "none" }); </script> <script type="text/javascript" src="https://web.archive.org/web/20230308132929js_/https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+  <style>
   body {
     margin: 0;
     padding: 0;
@@ -53,6 +54,6 @@
   </div>
 
   Here is somethingright away to express:
-  $$(\alpha + \beta)^n = \sum^{n}_{k=0} \binom{n}{k} \alpha^{n-k} \beta^k = \sum^{n}_{k=0} \binom{n}{k} (\alpha + \beta - 1)^k$$
+  \[ (\alpha + \beta)^n = \sum^{n}_{k=0} \binom{n}{k} \alpha^{n-k} \beta^k = \sum^{n}_{k=0} \binom{n}{k} (\alpha + \beta - 1)^k \]
 </body>
 </html>
